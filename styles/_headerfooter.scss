@@ -1,0 +1,45 @@
+.header{
+    .main-nav{
+        padding: 30px 0;
+        &-items{
+            display: flex;
+            justify-content: flex-end;
+        }
+        &-item{
+            margin-right: 20px;
+            padding: 0 10px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &-link:hover{
+            color: $red-light;
+            transition: all .3s ease;
+        }
+    }
+}
+
+.footer{
+    padding: 50px 0;
+    .socials{
+        a{
+            margin-right: 35px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .txt--copy{
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 790px){
+    .header{
+        .main-nav{
+            &-items{
+                justify-content: center;
+            }
+        }
+    }
+}
